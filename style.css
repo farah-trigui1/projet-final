@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+
+}
+::-webkit-scrollbar{
+    background-color: #ccc;
+
+}
+body{
+    background-color: #ece8e8;
+}
+section{
+    margin-top: 50px;
+}
+header{
+    background-color: #fffbfb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+}
+header .logo a{
+    font-size: 25px;
+    color: #29d9d5;
+   
+
+}
+header .logo a span{
+    color: #070606;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    
+}
+.menu li{
+    margin: 0 15px;
+    list-style-type: none;
+
+}
+menu li a{
+    color: #fff;
+    font-size: 14px;
+}
+a{
+    text-decoration: 0;
+    font-size: medium;
+}
+.btn-reservation{
+    color: rgb(209, 141, 234);
+    font-size: 14px;
+    border: 2px solid rgb(209, 141, 234);
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+.btn-reservation:hover{
+    background-color: #29d9d5;
+    color: #fff;
+    
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+#a-propos{
+    margin-top: 100px;
+    padding: 0 10%;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.title{
+    text-transform: capitalize;
+    margin: 70px 0;
+    font-weight: bold;
+    color: rgb(109, 78, 173);
+    position: relative;
+    margin-left: 15px;
+    font-size: 18px;
+}
+.title::after{
+    position: absolute;
+    left: -15px;
+    content: "";
+    height: 100%;
+    background-color: #fff;
+    width: 5px;
+}
+.img-desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.img-desc .left{
+    position: relative;
+    margin-left: 10px;
+    height: 100px;
+    width: 20%;
+}
+.img-desc .left image{
+    width: 50%;
+    height: 50%;
+    font-size: small;
+    position: relative;
+    box-shadow: 0 0 10px rgba(133, 87, 219, 0.537);
+}
+.img-desc .right h3{
+    color: #827aa8;
+    font-size: 25px;
+    margin-bottom: 20px;
+    
+}
+.img-desc .right a{
+    border: 1px solid rgb(209, 141, 234);
+    color: rgb(209, 141, 234);
+    font-size: 14px;
+    padding: 0px 25px;
+    font-weight: bold;
+}
+#popular-destination{
+    padding: 0 10%;
+    
+}
+.popular-destination h1{
+    margin-top: 100%;
+}
+#popular-destination .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap:32px;
+
+}
+#popular-destination .content .box{
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+}
+#popular-destination .content .box img{
+    /*height: 100%;
+    width: 100%;*/
+    object-fit: cover;
+    position: relative;
+    margin-left: 10px;
+    height: 100px;
+    width: 20%;
+
+}
+/*.img-desc .left::after{
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    content: "";
+    height: 100%;
+    background-color: rgb(124, 79, 166);
+    width: 100%;
+    z-index: -1;
+}
+
+
+
